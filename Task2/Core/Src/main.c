@@ -37,7 +37,7 @@ typedef struct Relay {
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define UART_FRAME 21
+#define UART_FRAME 22
 #define QUANTITY_OF_RELAY 12
 #define ON 1
 #define OFF 0
@@ -62,8 +62,8 @@ char result_after_remove[100];
 Relay list_relay[QUANTITY_OF_RELAY] = { 0 };
 int index_relay = 0;
 bool flag_sequential_mode;
-char sequential_mode[UART_FRAME] = "Sequential mode------";
-char stop_sequential_mode[UART_FRAME] = "Stop sequential mode-";
+char sequential_mode[UART_FRAME] = "Sequential mode-------";
+char stop_sequential_mode[UART_FRAME] = "Stop sequential mode--";
 char word_sequential[] = "Sequential at";
 char on[] = "Turn on";
 char off[] = "Turn off";
